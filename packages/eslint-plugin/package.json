@@ -1,0 +1,17 @@
+{
+  "name": "@eslint-plugin-demo/eslint-plugin",
+  "version": "1.0.0",
+  "description": "ESLint custom rules plugin",
+  "main": "lib/index.js",
+  "repository": "https://github.com/milankonir/eslint-plugin-demo",
+  "author": "milankonir <milan.konir@outreach.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib tsconfig.tsbuildinfo && yarn build:typescript",
+    "build:typescript": "tsc",
+    "clean": "rm -rf tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@typescript-eslint/utils": "^5.59.6"
+  }
+}
