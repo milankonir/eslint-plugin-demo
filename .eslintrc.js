@@ -5,5 +5,6 @@ module.exports = {
   rules: {
     '@eslint-plugin-demo/01-no-test-prefixed-function-names': 'off',
     '@eslint-plugin-demo/02-mandatory-comments': 'off',
+    '@eslint-plugin-demo/03-theme-colors-only': 'off',
   },
 };
