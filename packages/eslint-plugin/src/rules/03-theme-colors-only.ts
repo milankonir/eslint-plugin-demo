@@ -9,7 +9,7 @@ const rule: TSESLint.RuleModule<'themeColorsOnly'> = {
     docs: {
       description: 'Bans usage of non-theme colors.',
       recommended: 'error',
-      url: 'https://github.com/getoutreach/client/blob/master/packages/basics/eslint-plugin/src/rules/theme-colors-only.ts',
+      url: 'https://github.com/milankonir/eslint-plugin-demo/blob/main/packages/eslint-plugin/src/rules/03-theme-colors-only.ts',
     },
     schema: [],
     messages: {
