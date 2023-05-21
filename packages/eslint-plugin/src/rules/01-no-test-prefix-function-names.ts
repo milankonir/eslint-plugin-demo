@@ -6,7 +6,7 @@ const rule: TSESLint.RuleModule<'noRestrictedFunctionNames'> = {
     docs: {
       description: 'Bans restricted function names',
       recommended: 'error',
-      url: 'https://github.com/milankonir/eslint-plugin-demo/blob/main/packages/eslint-plugin/src/rules/01-no-restricted-function-names.ts',
+      url: 'https://github.com/milankonir/eslint-plugin-demo/blob/main/packages/eslint-plugin/src/rules/01-no-test-prefixed-function-names.ts',
     },
     schema: [],
     messages: {
@@ -18,8 +18,6 @@ const rule: TSESLint.RuleModule<'noRestrictedFunctionNames'> = {
   create(context) {
     const ret: TSESLint.RuleListener = {
       FunctionDeclaration: node => {
-        console.log(`Visiting ${node.id.name}`);
-
         if (node.id !== null && node.id.name === 'test') {
           context.report({
             loc: node.loc,
