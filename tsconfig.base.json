@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES2018",
     "moduleResolution": "node",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "esModuleInterop": true
   }
 }
