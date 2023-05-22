@@ -11,7 +11,8 @@
     "packages/**"
   ],
   "scripts": {
-    "lint": "eslint --ext ts,tsx ."
+    "lint": "eslint --ext ts,tsx .",
+    "lint:perf": "cross-env TIMING=all yarn lint"
   },
   "dependencies": {
     "@eslint-plugin-demo/eslint-plugin": "*"
@@ -21,6 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.6",
     "@typescript-eslint/parser": "^5.59.6",
     "@typescript-eslint/type-utils": "^5.59.7",
+    "cross-env": "^7.0.3",
     "eslint": "^8.40.0",
     "typescript": "^5.0.4"
   }
