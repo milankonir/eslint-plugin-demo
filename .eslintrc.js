@@ -1,5 +1,8 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
   plugins: ['@eslint-plugin-demo'],
   extends: ['plugin:@eslint-plugin-demo/recommended'],
   rules: {
@@ -9,6 +12,7 @@ module.exports = {
     '@eslint-plugin-demo/04-no-disabled-tests-without-todo': 'off',
     '@eslint-plugin-demo/05-todo-comments-format': 'off',
     '@eslint-plugin-demo/06-package-organization': 'off',
+    '@eslint-plugin-demo/07-type-checking': 'off',
   },
   overrides: [
     {
